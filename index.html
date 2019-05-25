@@ -7,12 +7,12 @@
   </head>
   <body>
 <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Навигация главной страницы сайта">
             <a href="index.html" class="main-header-logo">
               <img src="img/svg-nerds/nerds-logo.svg" width="165" height="65" alt="Логотип Дизайн-студии Нёрдс">
             </a>
           <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
+            <li class="site-navigation-current"><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="nerds-catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
@@ -101,20 +101,38 @@
       </main>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <img src="img/group-map.png" width="1440" height="416" alt="Как добраться?">
+      <img src="img/group-map.png" width="1440" height="416" alt="Санкт-Петербург,ул. Б. Конюшенная, д.19/8">
       <div class="contacts-block">
       <p class="contacts-title"><span>Nёrds</span> design studio</p>
-      <p class="contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д.19/8</p>
+      <p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д.19/8</p>
       <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
       <a href="#" class="btn-contacts">Напишите нам</a>
       </div>
-      <form >
+    </section>
+    <section class="modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="#" method="get">
+          <p class="feedback-item">
+            <label for="feedback-name">Ваше имя:</label>
+             <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="feedback-e-mail">Ваш e-mail:</label>
+             <input type="email" id="feedback-e-mail" name="e-mail" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+            <label for="feedback-message">Текст письма:</label>
+             <textarea id="feedback-message" name="message" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="modal-send" type="submit">Отправить</button>
+      </form>
+          <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#" aria-label="Нёрдс во Вконтакте"></a></li>
+        <li><a class="social-button" href="#" aria-label="Нёрдс на Фейсбуке"></a></li>
+        <li><a class="social-button" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
       </ul>
       <p class="footer-lead"><b>Давайте дружить, это выгодно!</b></p>
       <p class="footer-bonus">Скидка 10% для друзей из социальных сетей</p>
