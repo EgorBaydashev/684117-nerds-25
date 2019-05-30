@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="grey-zone">
 <header class="main-header">
         <nav class="main-navigation" aria-label="Навигация главной страницы сайта">
             <a href="index.html" class="main-header-logo">
               <img src="img/svg-nerds/nerds-logo.svg" width="165" height="65" alt="Логотип Дизайн-студии Нёрдс">
             </a>
           <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
+            <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li class="site-navigation-current"><a href="nerds-catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
@@ -23,6 +27,7 @@
 </header>
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+      </div>
     <section class="goods-filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
     <!-- Здесь будет форма -->
@@ -61,7 +66,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="show-filter" type="submit">Показать</button>
+      <button class="btn-filter" type="submit">Показать</button>
     </form>
     </section>
     <section class="catalog">
@@ -72,7 +77,8 @@
               <h3>
                <a href="#">
                 <span class="catalog-item-title">SEDONA</span>
-                <span class="catalog-category">Информационный сайт для туристов</span>
+                <span class="catalog-category">Информационный сайт
+для туристов</span>
                 </a>
               </h3>
                <p>
@@ -90,7 +96,8 @@
               <h3>
                <a href="#">
                 <span class="catalog-item-title">PINK</span>
-                <span class="catalog-category">Мобильное приложение</span>
+                <span class="catalog-category">Продуктовый лендинг
+приложения для iOS и Android</span>
                </a>
                </h3>
                <p>
@@ -108,7 +115,8 @@
               <h3>
                <a href="#">
                 <span class="catalog-item-title">Бородинский</span>
-                <span class="catalog-category">Барбершоп</span>
+                <span class="catalog-category">Сайт салона красоты.
+Для мужчин,да.</span>
                </a>
               </h3>
                <p>
@@ -126,7 +134,8 @@
             <h3>
              <a href="#">
               <span class="catalog-item-title">МИШКА</span>
-              <span class="catalog-category">Милые штучки ручной работы</span>
+              <span class="catalog-category">Интернет-магазин
+вязаных игрушек</span>
                </a>
                </h3>
                <p>
@@ -144,7 +153,8 @@
             <h3>
              <a href="#">
               <span class="catalog-item-title">А+</span>
-              <span class="catalog-category">Учебный центр</span>
+              <span class="catalog-category">Лендинг курсов повышения
+квалификации</span>
                </a>
                </h3>
                <p>
@@ -162,7 +172,8 @@
             <h3>
              <a href="#">
               <span class="catalog-item-title">КВАСТ</span>
-              <span class="catalog-category">Крафтовый квас</span>
+              <span class="catalog-category">Промо-сайт производителя
+крафтового кваса</span>
                </a>
                </h3>
                <p>
@@ -177,10 +188,10 @@
            </li>
          </ul>
          <ul class="pagination-list">
-           <li class="pagination-item pagination-item-current"><a aria-label="Первая страница магазина">1</a></li>
-           <li class="pagination-item"><a href="#" aria-label="Вторая страница магазина">2</a></li>
-           <li class="pagination-item"><a href="#" aria-label="Третья страница магазина">3</a></li>
-           <li class="pagination-item"><a href="#">Следующая</a></li>
+           <li class="pagination-list-current"><a aria-label="Первая страница магазина">1</a></li>
+           <li class="pagination-second"><a href="#" aria-label="Вторая страница магазина">2</a></li>
+           <li class="pagination-third"><a href="#" aria-label="Третья страница магазина">3</a></li>
+           <li class="pagination-next"><a href="#">Следующая</a></li>
          </ul>
     </section>
     </main> 
@@ -215,9 +226,9 @@
     </section>
     <footer class="main-footer">
       <ul class="footer-social">
-          <li><a class="social-button" href="#" aria-label="Нёрдс во Вконтакте"></a></li>
-          <li><a class="social-button" href="#" aria-label="Нёрдс на Фейсбуке"></a></li>
-          <li><a class="social-button" href="#" aria-label="Нёрдс в Инстаграме"></a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фэйсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
       <p class="footer-lead"><b>Давайте дружить, это выгодно!</b></p>
       <p class="footer-bonus">Скидка 10% для друзей из социальных сетей</p>
