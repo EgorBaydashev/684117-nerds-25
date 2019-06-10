@@ -53,6 +53,12 @@ a {
 
 .services-list {
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.services-list li {
+    margin-right: 100px;
 }
 
 .services-item {
@@ -60,7 +66,7 @@ a {
 }
 
 .services-item h3 {
-    margin: 0;
+    
     padding: 0;
 
     font-size: 24px;
@@ -84,6 +90,7 @@ a {
 .service-btn {
     display: block;
     padding: 18px 39px;
+
     font: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -207,6 +214,21 @@ table td {
 
 .clients-list {
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.clients-item-logo {
+    opacity: 0.2;
+}
+
+.clients-item-logo:hover,
+.clients-item-logo:focus {
+    opacity: 1;
+}
+
+.clients-item-logo:active {
+    opacity: 0.1;
 }
 
 .contacts-title {
@@ -246,6 +268,9 @@ table td {
 
 .footer-social {
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 140px;
 }
 
 .social-button {
@@ -271,6 +296,11 @@ table td {
     background-color: #d7373b;
 }
 
+.main-footer .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .footer-lead b {
     font-size: 36px;
     line-height: 36px;
@@ -282,6 +312,19 @@ table td {
     line-height: 22px;
     font-weight: 400;
     color: #767676;
+}
+
+.main-header-logo-inner:hover,
+.main-header-logo-inner:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo-inner:active {
+    opacity: 0.3;
+}
+
+.site-navigation-current {
+    border-bottom: 2px solid #fb565a;
 }
 
 .page-title {
@@ -302,6 +345,7 @@ table td {
 
 .pattern-list {
     list-style: none;
+    line-height: 20px;
 }
 
 .pattern-filter legend,
@@ -353,6 +397,11 @@ table td {
     list-style: none;
 }
 
+.catalog-item:hover,
+.catalog-item:focus {
+    box-shadow: 0 0 5px 3px #e1e1e1;
+}
+
 .catalog-item-box {
     background-color: #eeeeee;
     width: 360px;
@@ -370,7 +419,16 @@ table td {
     padding: 30px 116px;
 
     width: 125px;
-    height: 20px;
+  /*  height: 20px; */
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+    color: #fb565a;
+}
+
+.catalog-item-title:active {
+    opacity: 0.3;
 }
 
 .catalog-category {
@@ -384,7 +442,7 @@ table td {
     padding: 0 68px;
 
     width: 230px;
-    height: 35px;
+   /* height: 35px;*/
 
     white-space: pre;
 }
@@ -495,3 +553,66 @@ table td {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+/* ----- Сеточные стили --- */
+
+body > * {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+body > * > * {
+    background: rgba(255, 255, 0, 0.3);
+}
+
+body > * > * > * {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+body > * > * > * > * {
+    background: rgba(0, 255, 255, 0.3);
+}
+
+/* Временно для разработки */
+
+html,
+body {
+    min-width: 1440px;
+    min-height: 2476px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-header {
+    margin-bottom: 0;
+    min-height: 132px;
+}
+
+.main-navigation {
+    display: flex;
+    min-height: 132px;
+    background-color: transparent;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
+
+.site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    min-height: 132px;
+}
+
+.user-navigation {
+    min-height: 132px;
+}
+
