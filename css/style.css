@@ -30,7 +30,7 @@ img {
     overflow: hidden;
 }
 
-
+/*
 body > * {
     background: rgba(255, 0, 0, 0.3);
 }
@@ -46,7 +46,7 @@ body > * > * > * {
 body > * > * > * > * {
     background: rgba(0, 255, 255, 0.3);
 }
-
+*/
 
 html,
 body {
