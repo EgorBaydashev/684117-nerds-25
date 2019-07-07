@@ -26,11 +26,13 @@
         </div>
         </div>
 </header>
-    <main class="container">
+    <main>
       <div class="gray-zone">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
+      <div class="container">
       <section class="container sort-box">
+        <h2 class="visually-hidden">Меню сортировки</h2>
           <a class="price">Стоимость:</a>
           <a class="sort">Сортировать:</a>
           <div class="sort-type">
@@ -56,8 +58,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" aria-label="Стоимость ОТ"></div>
-              <div class="toggle toggle-max" aria-label="Стоимость ДО"></div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
             <div class="variations">
               <span>От</span>
@@ -70,33 +72,36 @@
         <legend>Сетка</legend>
         <ul class="pattern-list">
           <li class="radio">
-            <label><input class="product-form-input" type="radio" name="pattern-item" value="adaptive" checked>Адаптивная</label>
-          </li>
-          <li class="radio">
-            <label><input class="product-form-input" type="radio" name="pattern-item" value="fixed">Фиксированная</label>
-          </li>
-          <li class="radio">
-            <label><input class="product-form-input" type="radio" name="pattern-item" value="elastic">Резиновая</label>
-          </li>
+              <input id="radio-1" type="radio" name="filter" value="Адаптивная" checked>
+              <label for="radio-1">Адаптивная</label>
+            </li>
+            <li class="radio">
+              <input id="radio-2" type="radio" name="filter" value="Фиксированная">
+              <label for="radio-2">Фиксированная</label>
+            </li>
+            <li class="radio">
+              <input id="radio-3" type="radio" name="filter" value="Резиновая">
+              <label for="radio-3">Резиновая</label>
+            </li>
         </ul>
       </fieldset>
       <fieldset class="features-filter">
         <legend>Особенности</legend>
         <ul class="features-list">
           <li class="checkbox">
-            <label><input class="product-form-input" type="checkbox" name="slider" checked>Слайдер</label>
+            <label class="check option"><input class="check-input" type="checkbox" name="slider" checked><span class="check-box"></span>Слайдер</label>
           </li>
           <li class="checkbox">
-            <label><input class="product-form-input" type="checkbox" name="advantage-block">Блок преимуществ</label>
+            <label class="check option"><input class="check-input" type="checkbox" name="advantage-block"><span class="check-box"></span>Блок преимуществ</label>
           </li>
           <li class="checkbox">
-            <label><input class="product-form-input" type="checkbox" name="news" checked>Новости</label>
+            <label class="check option"><input class="check-input" type="checkbox" name="news" checked><span class="check-box"></span>Новости</label>
             </li>
           <li class="checkbox">
-            <label><input class="product-form-input" type="checkbox" name="gallery">Галерея</label>
+            <label class="check option"><input class="check-input" type="checkbox" name="gallery"><span class="check-box"></span>Галерея</label>
           </li>
           <li class="checkbox">
-            <label><input class="product-form-input" type="checkbox" name="busket">Корзина</label>
+            <label class="check option"><input class="check-input" type="checkbox" name="busket"><span class="check-box"></span>Корзина</label>
           </li>
         </ul>
       </fieldset>
@@ -229,9 +234,9 @@
          </ul>
         </section>
       </div>
+      </div>
     </main> 
     <section class="contacts">
-   <!--   <img src="img/group-map.png" width="1440" height="416" alt="Санкт-Петербург,ул. Б. Конюшенная, д.19/8">  -->
    <iframe class="contacts-map"
    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
    allowfullscreen></iframe>
