@@ -28,26 +28,6 @@ img {
     overflow: hidden;
 }
 
-/*-------- Заливки для сеток------
-
-
-body > * {
-    background: rgba(255, 0, 0, 0.3);
-}
-
-body > * > * {
-    background: rgba(255, 255, 0, 0.3);
-}
-
-body > * > * > * {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-body > * > * > * > * {
-    background: rgba(0, 255, 255, 0.3);
-}
-*/
-
 .main-header {
     margin: 0;
     min-width: 1200px;
@@ -209,22 +189,18 @@ body > * > * > * > * {
     background-image: url("../img/nerds-index-slide11.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-  /*  background-size: 698px 413px;*/
-  /*  margin-right: 51px;*/
 }
   
 .slide2 {
     background-image: url("../img/nerds-index-slide22.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-  /*  background-size: 663px 430px;*/
 }
   
 .slide3 {
     background-image: url("../img/nerds-index-slide33.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-   /* background-size: 759px 411px;*/
 }
   
 #slide1:checked~.slider>.slide1,
@@ -323,6 +299,7 @@ body > * > * > * > * {
 }
 
 .services-item h3 {
+    margin: 0;
     margin-top: 0;
     margin-bottom: 19px;
     padding: 0;
@@ -333,9 +310,10 @@ body > * > * > * > * {
 }
 
 .services-item p {
-    margin-bottom: 31px;
+    margin: 0;
+    margin-bottom: 30px;
     padding: 0;
-    width: 245px;
+    width: 255px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -344,7 +322,7 @@ body > * > * > * > * {
 .service-btn {
     display: inline-block;
     vertical-align: top; 
-    padding: 17px 39px;
+    padding: 16px 40px;
     font: inherit;
     font-size: 16px;
     line-height: 18px;
@@ -416,8 +394,8 @@ body > * > * > * > * {
 }
 
 .about-us-left {
-    margin-right: 140px;
-    margin-top: 74px;
+    margin-right: 100px;
+    margin-top: 58px;
     margin-bottom: 76px;
 }
 
@@ -427,7 +405,7 @@ body > * > * > * > * {
     line-height: 45px;
     font-weight: 500;
     margin-left: 2px;
-    margin-bottom: 23px;
+    margin-bottom: 33px;
 }
   
 .our-definition {
@@ -435,8 +413,9 @@ body > * > * > * > * {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     margin-left: 2px;
+    padding-right: 20px;
 }
 
 .about-us-paragraph-left {
@@ -477,7 +456,8 @@ body > * > * > * > * {
 
 .about-us-right img {
     margin-top: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 16px;
+    margin-left: 8px;
 }
 
 .about-us-paragraph-right {
@@ -486,12 +466,13 @@ body > * > * > * > * {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
+    margin-left: 7px;
 }
 
-table td {
+.statistics td {
     height: 35px;
-    padding: 5px; 
+    padding: 9px; 
 } 
 
 .lower-row {
@@ -527,18 +508,18 @@ table td {
     position: relative;
     padding: 0;
     margin: 0;
-  }
+}
   
 .clients-item+.clients-item::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: -2px;
+    left: -22px;
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
     transform: translateY(-50%); 
-  }
+}
 
 .clients-item-logo {
     opacity: 0.2;
@@ -586,7 +567,7 @@ table td {
     justify-content: center;
     width: 270px;
     padding-left: 50px;
-    padding-top: 42px;
+    padding-top: 45px;
     padding-bottom: 51px;
     background-color: #ffffff;
     text-align: left;
@@ -595,7 +576,7 @@ table td {
 .contacts-title {
     padding: 0;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -607,7 +588,8 @@ table td {
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
-    width: 210px;
+    margin-left: 4px;
+    min-width: 210px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -622,7 +604,7 @@ table td {
 
 .btn-contacts {
     display: block;
-    padding: 19px 45px;
+    padding: 17px 45px;
     margin-top: 35px;
     font: inherit;
     font-size: 16px;
@@ -663,8 +645,9 @@ table td {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
-    margin: 4px 0 10px;
     padding: 0;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 .footer-friendship p {
@@ -672,6 +655,7 @@ table td {
     line-height: 22px;
     margin: 0;
     padding: 0;
+    padding-bottom: 5px;
 }
 
 .footer-social-list {
@@ -681,9 +665,9 @@ table td {
 
 .social-wrapper {
     display: flex;
-    padding-top: 69px;
+    padding-top: 65px;
     align-items: center;
-    padding-left: 1px;
+    padding-left: 2px;
     padding-bottom: 69px;
 }
 
@@ -932,7 +916,7 @@ table td {
     line-height: 55px;
     font-weight: 500;
     text-align: center;
-    padding-top: 74px;
+    padding-top: 78px;
     padding-bottom: 108px;
     background-color: #eeeeee;
     background-size: cover;
@@ -945,14 +929,14 @@ table td {
     text-transform: uppercase;
     text-align: left;
     padding: 0;
-    padding-top: 55px;
+    padding-top: 62px;
 }
 
 .price {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
-    margin-right: 282px;
+    margin-right: 283px;
 }
 
 .sort {
@@ -963,7 +947,7 @@ table td {
 }
 
 .sort-type {
-    min-width: 361px;
+    min-width: 386px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -988,7 +972,7 @@ table td {
 }
 
 .sort-type .name-tag {
-    margin-right: 48px;
+    margin-right: 49px;
 }
   
 .sort-type .type-tag:focus,
@@ -1032,8 +1016,8 @@ table td {
     align-items: flex-start;
     margin: 0;
     padding: 0;
-    padding-top: 49px;
-    margin-bottom: 54px;
+    padding-top: 53px;
+    margin-bottom: 64px;
 }
 
 .goods-filter {
@@ -1045,7 +1029,7 @@ table td {
 }
 
 .range-filter {
-    margin-bottom: 54px;
+    margin-bottom: 64px;
 }
 
 .range-controls {
@@ -1054,7 +1038,7 @@ table td {
     padding-bottom: 39px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 14px;
+    margin-bottom: 23px;
     border-radius: 5px;
     background-color: #f1f1f1;
 }
@@ -1136,7 +1120,7 @@ table td {
     padding-right: 35px;
     border-radius: 4px;
     background-color: #eeeeee;
-    margin-right: 34px;
+    margin-right: 30px;
     margin-left: 9px;
 }
   
@@ -1151,12 +1135,19 @@ table td {
     margin-left: 8px;
 }
 
-.pattern-filter,
+.pattern-filter {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 44px;
+    margin-left: 1px;
+}
+
 .features-filter {
     border: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 43px;
+    margin-bottom: 32px;
     margin-left: 1px;
 }
 
@@ -1173,8 +1164,12 @@ table td {
 .radio {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
     margin-left: 15px;
+}
+
+.pattern-list .radio:nth-child(1),
+.pattern-list .radio:nth-child(2) {
+    margin-bottom: 20px;
 }
 
 .pattern-filter legend,
@@ -1184,7 +1179,7 @@ table td {
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .radio input[type="radio"] {
@@ -1192,7 +1187,7 @@ table td {
 }
 
 .radio label {
-    margin-left: 5px;
+    margin-left: 4px;
     position: relative;
 }
 
@@ -1271,11 +1266,11 @@ table td {
 .checkbox {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 }
 
 .checkbox .check {
-    padding-left: 37px;
+    padding-left: 36px;
 }
 
 .checkbox .check-input {
@@ -1290,7 +1285,7 @@ table td {
     width: 27px;
     height: 23px;
     background-image: url("../img/svg-nerds/checkbox-off.svg");
-    margin-left: -36px;
+    margin-left: -35px;
     background-repeat: no-repeat;
     opacity: 0.4;
 }
@@ -1325,7 +1320,7 @@ table td {
 .btn-filter {
     font: inherit;
     display: block;
-    padding: 19px 89px;
+    padding: 17px 89px;
     font-size: 16px;
     font-weight: 500;
     color: #3f3f3f;
@@ -1368,7 +1363,7 @@ table td {
 .catalog-item {
     width: 360px;
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     padding-top: 40px;
 }
 
@@ -1497,6 +1492,7 @@ table td {
 .pagination-list {
     padding: 0;
     margin: 0;
+    margin-left: 2px;
     list-style: none;
     display: flex;
 }
@@ -1515,27 +1511,27 @@ table td {
     background-color: #ffffff;
     border: 2px solid #dbdbdb;
     border-radius: 2px;
-    padding: 17px 19px;
+    padding: 14px 18px;
     margin-right: 11px;
 }
 
 .pagination-second {
     background-color: #eeeeee;
-    padding: 19px 21px;
+    padding: 16px 20px;
     margin-right: 11px;
     border-radius: 2px;
 }
 
 .pagination-third {
     background-color: #eeeeee;
-    padding: 19px 21px;
+    padding: 16px 20px;
     margin-right: 11px;
     border-radius: 2px;
 }
 
 .pagination-next {
     background-color: #eeeeee;
-    padding: 19px 79px;
+    padding: 16px 79px;
     border-radius: 2px;
 }
 
