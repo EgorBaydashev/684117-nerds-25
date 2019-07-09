@@ -536,7 +536,9 @@ img {
 
 .contacts {
     position: relative;
-    background-image: url("/img/group-map.png");
+    background-image: url("../img/group-map.jpg");
+    background-size: 100%;
+    background-color: #b5b5b5;
 }
 
 .contacts-map {
@@ -795,6 +797,7 @@ img {
 .write-text textarea {
     width: 760px;
     height: 118px;
+    resize: none;
 }
 
 .info-input {
